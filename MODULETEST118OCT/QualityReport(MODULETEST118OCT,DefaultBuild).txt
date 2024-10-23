@@ -1,0 +1,230 @@
+QualityReport
+22 October 2024 12:26:50
+
+------ Start build(MODULETEST118OCT, DefaultBuild) ------
+------ Build ended(Error:0, Warning:0)(MODULETEST118OCT, DefaultBuild) ------
+
+
+--- SHA1 hash value of output files ---
+D:\JIJIL EPPL\METER WITH MODULE TEST\18THOCT\MODULETEST118OCT\DefaultBuild\MODULETEST118OCT.abs: c7f8519fa78d619f5cec2fb795f1adc7be030041
+D:\JIJIL EPPL\METER WITH MODULE TEST\18THOCT\MODULETEST118OCT\DefaultBuild\MODULETEST118OCT.mot: 14eca1f7c29a22b79916dd121a8c04327d566a7b
+
+
+--- System Information ---
+*OS Version
+ Microsoft Windows 11 Pro (-, 10.0.22631, WOW64)
+*Language
+ English (United States)
+*.NET Framework Version
+ Microsoft .NET Framework 4 [.NET 4.8 or later] (533320)
+
+--- Application Information ---
+*Product Name
+ CS+ for CC
+*Package Version
+ V8.12.00  [06 Jun 2024]
+*Version
+ V9.12.00.03 [17 May 2024]
+*Assembly Version
+ 3.12.10.1
+*Product License
+ Compiler Standard V1 for RL78 (CC-RL) Node Locked License(permanent); 
+*Execution Place
+ C:\Program Files (x86)\Renesas Electronics\CS+\CC
+*Memory Usage
+ *Private Working Set
+  467 MB
+ *Number of GDI Objects
+  2259
+ *Number of USER Objects
+  1360
+ *Opened Files
+  6 editors, 6 files, 91 KB
+
+--- Build Tool Plug-in Information ---
+RH850 Build tool CC-RH Plug-in
+ *Version
+  V8.09.00.00 [07 Oct 2022]
+ *Assembly Version
+  1.1.10.12
+ *DLL File Name
+  BuildToolCCRH.dll
+RL78 Build tool CC-RL Plug-in
+ *Version
+  V8.11.00.00 [29 Sep 2023]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolCCRL.dll
+RX Build tool CC-RX Plug-in
+ *Version
+  V8.09.00.00 [07 Oct 2022]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  BuildToolCCRX.dll
+RH850 Build tool GHS CCRH850 Plug-in
+ *Version
+  V1.09.00.00 [27 Mar 2024]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolGHSCCRH850.dll
+
+--- Debug Tool Plug-in Information ---
+Debugger Collection Plug-in
+ *Version
+  V8.12.00.03 [23 May 2024]
+ *Assembly Version
+  2.12.10.1
+ *DLL File Name
+  DebugToolCollection.dll
+
+--- Other Plug-in Information ---
+Code Generator Plug-in for RH850
+ *Version
+  V1.02.02.05 [25 May 2018]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  CodeGeneratorRH850.dll
+Code Generator Plug-in
+ *Version
+  V4.08.06.01 [28 Oct 2022]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  CodePart.dll
+Code Generator/PinView Plug-in
+ *Version
+  V2.10.07.02 [08 Nov 2021]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  CodePart2.dll
+Debug Console Plug-in
+ *Version
+  V8.09.00.03 [24 Nov 2022]
+ *Assembly Version
+  8.9.0.0
+ *DLL File Name
+  DebugConsole.dll
+Quick and Effective tool solution - QE
+ *Version
+  V9.12.00.01 [08 Apr 2024]
+ *Assembly Version
+  1.15.10.16
+ *DLL File Name
+  InCarTools.dll
+Pin Configurator Plug-in
+ *Version
+  V1.54.01.01 [31 Jul 2014]
+ *Assembly Version
+  1.6.10.23
+ *DLL File Name
+  PinConfig.dll
+Program Analyzer Plug-in
+ *Version
+  V4.13.00.03 [24 May 2023]
+ *Assembly Version
+  3.12.11.9
+ *DLL File Name
+  ProgramAnalyzer.dll
+IronPython Console Plug-in
+ *Version
+  V1.48.00.05 [23 May 2024]
+ *Assembly Version
+  1.6.10.23
+ *DLL File Name
+  PythonConsole.dll
+Editor plug-in DLL
+ *Version
+  V1.20.00.03 [20 May 2024]
+ *Assembly Version
+  1.1.0.0
+ *DLL File Name
+  SEditor.dll
+Stack Usage Tracer
+ *Version
+  V1.05.00.02 [30 Jul 2014]
+ *Assembly Version
+  1.30.11.15
+ *DLL File Name
+  Stk.dll
+Update Manager Plug-in
+ *Version
+  V2.03.00.02 [29 Oct 2018]
+ *Assembly Version
+  1.13.6.20
+ *DLL File Name
+  Update.dll
+
+Debug Tool Common Interface
+ *Version
+  V8.12.00.03 [23 May 2024]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  CommonDebuggerInterface.dll
+Device Information Common Interface
+ *Version
+  V9.11.00.03 [13 Oct 2023]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  DeviceInformation.dll
+
+--- Main Project Information ---
+D:\JIJIL EPPL\METER WITH MODULE TEST\18THOCT\MODULETEST118OCT\MODULETEST118OCT.mtpj
+Microcontroller Information
+ *R5F10NLE
+  *File Name: Version
+   RL78_Productlist.xml: V8.120000
+   R5F10NLE_common.xml: V1.01.00.XX.XX
+   DR5F10NLE.DVF: V1.01
+   -: -
+   -: -
+  
+
+Build Tool Information
+ *CC-RL
+   * Version of plug-in(*.dll)
+     V8.12.00.02 [22 Apr 2024]
+   * The Version of the Compiler Package
+     V1.14.00
+  
+ * The version of SMS Assembler
+   V1.00.00.01 [29 May 2020]
+ * The version of GREEN_DSP Structured Assembler 
+   V1.05.00
+ 
+
+Debug Tool Information
+ *RL78 E2 Lite
+  Debugger Library V8.12.00.03 [23 May 2024]
+  RL78 E2 Lite Executor V4.13c [14 Mar 2024]
+  E2 Lite 4100 A F/W V07.06
+  
+
+Other Tool Information
+ *None
+
+ *None
+
+ *Code Generator
+ *None
+
+ *Program Analyzer
+  *Version
+   V4.13.00.03 [24 May 2023]
+
+ *None
+
+Other Information
+ *RL78/I1C Code Library
+  *Version
+   V1.01.07.02 [08 Nov 2021]
+  *Description
+   Code library for RL78/I1C code generation plugin.
+
+
