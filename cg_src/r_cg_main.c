@@ -106,19 +106,17 @@ void main(void)
      
      R_UART1_Receive(UART1_RECIEVED_DATA, sizeof(UART1_RECIEVED_DATA));//module mcu
      
-     //R_UART0_Send(at_command, sizeof(at_command));
+    
      
      __delay_ms(500);
     /* Start user code. Do not edit comment generated here */
     while (1U)
     {
 	if(TIMER_COUNT>10)
-	{
-		
-            //R_UART0_Send(AT_COMMAND, sizeof(AT_COMMAND));
-              TIMER_COUNT=0;
+	{  
+          TIMER_COUNT=0;
 	}
-     //__delay_ms(1000);
+    
         ;
     }
     /* End user code. Do not edit comment generated here */

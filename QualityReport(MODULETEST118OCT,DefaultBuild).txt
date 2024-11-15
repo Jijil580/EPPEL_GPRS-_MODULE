@@ -1,12 +1,55 @@
 QualityReport
-04 November 2024 14:56:25
+15 November 2024 15:31:34
 
 ------ Start build(MODULETEST118OCT, DefaultBuild) ------
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.14.00\Bin\ccrl.exe cg_src\r_cg_sau_user.c -cpu=S3 -o DefaultBuild\r_cg_sau_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NLE.DVF" -g -g_line -I cg_src -I . -c -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.14.00\Bin\rlink.exe -subcommand=DefaultBuild\MODULETEST118OCT.clnk
+Renesas Optimizing Linker Completed
 ------ Build ended(Error:0, Warning:0)(MODULETEST118OCT, DefaultBuild) ------
+
+--- CommandFile 1 ---
+DefaultBuild\MODULETEST118OCT.clnk :
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_cg_main.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_tau.obj
+-Input=DefaultBuild\r_cg_tau_user.obj
+-Input=DefaultBuild\r_cg_sau.obj
+-Input=DefaultBuild\r_cg_sau_user.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NLE.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\MODULETEST118OCT.abs
+-OCDBG=84
+-DEBUG_MONITOR=FE00-FFFF
+-USER_OPT_BYTE=EFFFE0
+-LISt=DefaultBuild\MODULETEST118OCT.map
+-SHow=SYmbol,Total_size
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-MEMory=High
+-NOLOgo
+-LIBrary=DefaultBuild\MODULETEST118OCT.lib
+-end
+-Input=DefaultBuild\MODULETEST118OCT.abs
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NLE.DVF
+-OUtput=DefaultBuild\MODULETEST118OCT.mot
+-FOrm=Stype
+-NOMessage
+-exit
 
 
 --- SHA1 hash value of output files ---
-D:\JIJIL EPPL\PROJECTS\EPPEL_GPRS-_MODULE\MODULETEST118OCT\DefaultBuild\MODULETEST118OCT.abs: d77268868990f9f91ffc5fe3140bcafafee4571c
+D:\JIJIL EPPL\PROJECTS\EPPEL_GPRS-_MODULE\MODULETEST118OCT\DefaultBuild\MODULETEST118OCT.abs: 1a55acd8589ae61ca992044bec7fbd0c9c3666b4
 D:\JIJIL EPPL\PROJECTS\EPPEL_GPRS-_MODULE\MODULETEST118OCT\DefaultBuild\MODULETEST118OCT.mot: ac8528c70c144143abab6312553fa16953da50b8
 
 
@@ -33,13 +76,13 @@ D:\JIJIL EPPL\PROJECTS\EPPEL_GPRS-_MODULE\MODULETEST118OCT\DefaultBuild\MODULETE
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *Memory Usage
  *Private Working Set
-  409 MB
+  419 MB
  *Number of GDI Objects
-  2226
+  2278
  *Number of USER Objects
-  1333
+  1362
  *Opened Files
-  6 editors, 6 files, 91 KB
+  9 editors, 9 files, 170 KB
 
 --- Build Tool Plug-in Information ---
 RH850 Build tool CC-RH Plug-in

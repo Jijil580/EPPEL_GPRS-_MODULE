@@ -259,7 +259,7 @@ static void __near r_uart1_interrupt_receive(void)
 	if (RX1_BUFFER_COUNT < 100- 1 && MAIN_RX_STORE_COUNT < 100 - 1) // Ensure we don't overflow
          {
                
-      //  *gp_uart0_rx_address = rx_data;
+     
 	  RX1_BUFFER[RX1_BUFFER_COUNT]= rx_data;
 	 // MAIN_RX_STORE[MAIN_RX_STORE_COUNT]=rx_data;
 	  RX1_BUFFER_COUNT++;
@@ -285,7 +285,7 @@ static void __near r_uart1_interrupt_receive(void)
        if(END_OF_RESPONSE1)
        {
 	 
-         //UART1_RECIEVED_DATA[ g_uart0_rx_count]='\0';
+        
          RX1_BUFFER[RX1_BUFFER_COUNT]='\0';
 	 
 	 strcpy((char *)final_buffer, (char *)(RX1_BUFFER + 2));    
