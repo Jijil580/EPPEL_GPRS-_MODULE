@@ -68,13 +68,13 @@ extern volatile uint16_t  g_uart1_rx_length;           /* uart1 receive data len
  uint8_t RX1_BUFFER[100];
  uint8_t TX1_BUFFER[500];
  
-int  RX0_BUFFER_COUNT=0;
+ int  RX0_BUFFER_COUNT=0;
  uint8_t TX0_BUFFER_COUNT=0;
  uint8_t RX1_BUFFER_COUNT=0;
  uint8_t TX1_BUFFER_COUNT=0;
  uint8_t MAIN_RX_STORE_COUNT=0;
  uint8_t END_OF_RESPONSE=0;
-  uint8_t END_OF_RESPONSE1=0;
+ uint8_t END_OF_RESPONSE1=0;
 uint8_t MAIN_RX_STORE[200];
  uint8_t final_buffer[200]; // Adjust size as per your needs
 /***********************************************************************************************************************
@@ -105,7 +105,7 @@ static void __near r_uart0_interrupt_receive(void)
 	if (RX0_BUFFER_COUNT < 100- 1 && MAIN_RX_STORE_COUNT < 1000 - 1) // Ensure we don't overflow
         {
               
-      //  *gp_uart0_rx_address = rx_data;
+    
 	RX0_BUFFER[RX0_BUFFER_COUNT]= rx_data;
 	MAIN_RX_STORE[MAIN_RX_STORE_COUNT]=rx_data;
 	RX0_BUFFER_COUNT++;
@@ -129,12 +129,10 @@ static void __near r_uart0_interrupt_receive(void)
 		RX0_BUFFER[RX0_BUFFER_COUNT - 4] == 'O') 
             {
                 END_OF_RESPONSE = 1;
-                //RX0_BUFFER_COUNT = 0; // Reset buffer count for the next response
+                
             }
         }
-        // gp_uart0_rx_address++;
-        // g_uart0_rx_count++;
-
+        
        
 	
     }
@@ -271,17 +269,14 @@ static void __near r_uart1_interrupt_receive(void)
         if (rx_data == '\n')
         {
             LINE_END_COUNT++;
-            // Check for the end of response
-            //if (RX1_BUFFER_COUNT >= 4 &&   // Ensure we have enough characters
-                //RX1_BUFFER[RX1_BUFFER_COUNT - 1] == '\n' &&
+           
                
            // {
                 END_OF_RESPONSE1 = 1;
-                //RX0_BUFFER_COUNT = 0; // Reset buffer count for the next response
+                
            // }
         }
-        // gp_uart0_rx_address++;
-        // g_uart0_rx_count++;
+    
 
        
 	
