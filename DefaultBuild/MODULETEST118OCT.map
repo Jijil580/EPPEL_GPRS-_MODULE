@@ -1,0 +1,411 @@
+Renesas Optimizing Linker (V3.07.00 )             28-Oct-2024 17:59:34
+
+*** Options ***
+
+-subcommand=DefaultBuild\MODULETEST118OCT.clnk
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_cg_main.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_tau.obj
+-Input=DefaultBuild\r_cg_tau_user.obj
+-Input=DefaultBuild\r_cg_sau.obj
+-Input=DefaultBuild\r_cg_sau_user.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NLE.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\MODULETEST118OCT.abs
+-OCDBG=84
+-DEBUG_MONITOR=FE00-FFFF
+-USER_OPT_BYTE=EFFFE0
+-LISt=DefaultBuild\MODULETEST118OCT.map
+-SHow=SYmbol,Total_size
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-MEMory=High
+-NOLOgo
+-LIBrary=DefaultBuild\MODULETEST118OCT.lib
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000080         0   2
+.init_array
+                                  00000080  00000080         0   2
+.sdata
+                                  00000080  00000080         0   2
+.data
+                                  00000082  00000091        10   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.RLIB
+                                  000000c4  000000c4         0   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.text
+                                  000000d8  000003b4       2dd   1
+.textf
+                                  000003b5  0000082e       47a   1
+.SLIB
+                                  0000082f  00000854        26   1
+.const
+                                  00002000  00002000         0   2
+.monitor2
+                                  0000fe00  0000ffff       200   1
+.bss
+                                  000fe700  000ff26f       b70   2
+.dataR
+                                  000ff270  000ff27f        10   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00000b80 Byte(s)
+ROMDATA SECTION:  000002a8 Byte(s)
+PROGRAM SECTION:  0000077d Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=.vect
+FILE=rlink_generates_04
+                                  00000000  0000007f        80
+
+SECTION=.data
+FILE=DefaultBuild\r_cg_main.obj
+                                  00000082  00000087         6
+FILE=DefaultBuild\r_cg_sau_user.obj
+                                  00000088  00000091         a
+
+SECTION=.option_byte
+FILE=rlink_generates_01
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_03
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_02
+                                  000000ce  000000d7         a
+
+SECTION=.text
+FILE=DefaultBuild\cstart.obj
+                                  000000d8  0000014a        73
+  _start
+                                  000000d8         0   none ,g         * 
+  _exit
+                                  00000148         0   none ,g         * 
+  _atexit
+                                  0000014a         0   none ,g         * 
+FILE=DefaultBuild\r_cg_tau_user.obj
+                                  0000014b  0000015e        14
+  _r_tau0_channel0_interrupt@1
+                                  0000014b        14   func ,l         * 
+FILE=DefaultBuild\r_cg_sau_user.obj
+                                  0000015f  000003b4       256
+  _r_uart0_interrupt_receive@1
+                                  0000015f        e2   func ,l         * 
+  _r_uart0_interrupt_send@1
+                                  00000241        5c   func ,l         * 
+  _r_uart1_interrupt_receive@1
+                                  0000029d        a0   func ,l         * 
+  _r_uart1_interrupt_send@1
+                                  0000033d        78   func ,l         * 
+
+SECTION=.textf
+FILE=DefaultBuild\stkinit.obj
+                                  000003b5  000003f8        44
+  _stkinit
+                                  000003b5         0   none ,g         * 
+  LSTINIT1
+                                  000003c3         0   none ,l         * 
+  LSTINIT2
+                                  000003ed         0   none ,l         * 
+  LSTINIT3
+                                  000003f8         0   none ,l         * 
+FILE=DefaultBuild\r_cg_main.obj
+                                  000003f9  0000047f        87
+  ___delay_ms
+                                  000003f9        25   func ,g         * 
+  _main
+                                  0000041e        62   func ,g         * 
+FILE=DefaultBuild\r_cg_systeminit.obj
+                                  00000480  000004cc        4d
+  _R_Systeminit
+                                  00000480        48   func ,g         * 
+  _hdwinit
+                                  000004c8         5   func ,g         * 
+FILE=DefaultBuild\r_cg_cgc.obj
+                                  000004cd  00000546        7a
+  _R_CGC_Create
+                                  000004cd        7a   func ,g         * 
+FILE=DefaultBuild\r_cg_cgc_user.obj
+                                  00000547  00000549         3
+  _R_CGC_Get_ResetSource
+                                  00000547         3   func ,g         * 
+FILE=DefaultBuild\r_cg_port.obj
+                                  0000054a  0000055e        15
+  _R_PORT_Create
+                                  0000054a        15   func ,g         * 
+FILE=DefaultBuild\r_cg_tau.obj
+                                  0000055f  000005f8        9a
+  _R_TAU0_Create
+                                  0000055f        7a   func ,g         * 
+  _R_TAU0_Channel0_Start
+                                  000005d9        10   func ,g         * 
+  _R_TAU0_Channel0_Stop
+                                  000005e9        10   func ,g         * 
+FILE=DefaultBuild\r_cg_sau.obj
+                                  000005f9  0000080f       217
+  _R_SAU0_Create
+                                  000005f9        14   func ,g         * 
+  _R_UART0_Create
+                                  0000060d        78   func ,g         * 
+  _R_UART0_Start
+                                  00000685        26   func ,g         * 
+  _R_UART0_Stop
+                                  000006ab        1e   func ,g         * 
+  _R_UART0_Receive
+                                  000006c9        18   func ,g         * 
+  _R_UART0_Send
+                                  000006e1        26   func ,g         * 
+  _R_UART1_Create
+                                  00000707        87   func ,g         * 
+  _R_UART1_Start
+                                  0000078e        26   func ,g         * 
+  _R_UART1_Stop
+                                  000007b4        1e   func ,g         * 
+  _R_UART1_Receive
+                                  000007d2        18   func ,g         * 
+  _R_UART1_Send
+                                  000007ea        26   func ,g         * 
+FILE=DefaultBuild\r_cg_sau_user.obj
+                                  00000810  0000082e        1f
+  _r_uart0_callback_receiveend@1
+                                  00000810         a   func ,l         * 
+  _r_uart0_callback_softwareoverrun@1
+                                  0000081a         1   func ,l         * 
+  _r_uart0_callback_sendend@1
+                                  0000081b         1   func ,l         * 
+  _r_uart0_callback_error@1
+                                  0000081c         1   func ,l         * 
+  _r_uart1_callback_receiveend@1
+                                  0000081d         f   func ,l         * 
+  _r_uart1_callback_softwareoverrun@1
+                                  0000082c         1   func ,l         * 
+  _r_uart1_callback_sendend@1
+                                  0000082d         1   func ,l         * 
+  _r_uart1_callback_error@1
+                                  0000082e         1   func ,l         * 
+
+SECTION=.SLIB
+FILE=memset
+                                  0000082f  0000083c         e
+  _memset
+                                  0000082f         0   none ,g         * 
+FILE=strcpy
+                                  0000083d  00000849         d
+  _strcpy
+                                  0000083d         0   none ,g         * 
+FILE=strlen
+                                  0000084a  00000854         b
+  _strlen
+                                  0000084a         0   none ,g         * 
+
+SECTION=.monitor2
+FILE=rlink_generates_02
+                                  0000fe00  0000ffff       200
+
+SECTION=.bss
+FILE=DefaultBuild\r_cg_main.obj
+                                  000fe700  000fed47       648
+  _UART1_RECIEVED_DATA
+                                  000fe700        64   data ,g         * 
+  _UART1_SEND_DATA
+                                  000fe764       3e8   data ,g         * 
+  _UART0_RECIEVED_DATA
+                                  000feb4c        c8   data ,g         * 
+  _UART0_SEND_DATA
+                                  000fec14        64   data ,g         * 
+  _RECIEVED_DATA_SIZE
+                                  000fec78         1   data ,g         * 
+  _MODULE_FEEDBACK
+                                  000fec79        c8   data ,g         * 
+  _TIMER_COUNT
+                                  000fed42         4   data ,g         * 
+  _FEEDBACK_LENGTHG
+                                  000fed46         2   data ,g         * 
+FILE=DefaultBuild\r_cg_sau.obj
+                                  000fed48  000fed5b        14
+  _gp_uart0_tx_address
+                                  000fed48         2   data ,g         * 
+  _g_uart0_tx_count
+                                  000fed4a         2   data ,g         * 
+  _gp_uart0_rx_address
+                                  000fed4c         2   data ,g         * 
+  _g_uart0_rx_count
+                                  000fed4e         2   data ,g         * 
+  _g_uart0_rx_length
+                                  000fed50         2   data ,g         * 
+  _gp_uart1_tx_address
+                                  000fed52         2   data ,g         * 
+  _g_uart1_tx_count
+                                  000fed54         2   data ,g         * 
+  _gp_uart1_rx_address
+                                  000fed56         2   data ,g         * 
+  _g_uart1_rx_count
+                                  000fed58         2   data ,g         * 
+  _g_uart1_rx_length
+                                  000fed5a         2   data ,g         * 
+FILE=DefaultBuild\r_cg_sau_user.obj
+                                  000fed5c  000ff26f       514
+  _RX0_BUFFER
+                                  000fed5c        c8   data ,g         * 
+  _TX0_BUFFER
+                                  000fee24        64   data ,g         * 
+  _RX1_BUFFER
+                                  000fee88        64   data ,g         * 
+  _TX1_BUFFER
+                                  000feeec       1f4   data ,g         * 
+  _MAIN_RX_STORE
+                                  000ff0e0        c8   data ,g         * 
+  _final_buffer
+                                  000ff1a8        c8   data ,g         * 
+
+SECTION=.dataR
+FILE=DefaultBuild\r_cg_main.obj
+                                  000ff270  000ff275         6
+  _AT_COMMAND
+                                  000ff270         6   data ,g         * 
+FILE=DefaultBuild\r_cg_sau_user.obj
+                                  000ff276  000ff27f         a
+  _LINE_END_COUNT
+                                  000ff276         1   data ,g         * 
+  _RX0_BUFFER_COUNT
+                                  000ff278         2   data ,g         * 
+  _TX0_BUFFER_COUNT
+                                  000ff27a         1   data ,g         * 
+  _RX1_BUFFER_COUNT
+                                  000ff27b         1   data ,g         * 
+  _TX1_BUFFER_COUNT
+                                  000ff27c         1   data ,g         * 
+  _MAIN_RX_STORE_COUNT
+                                  000ff27d         1   data ,g         * 
+  _END_OF_RESPONSE
+                                  000ff27e         1   data ,g         * 
+  _END_OF_RESPONSE1
+                                  000ff27f         1   data ,g         * 
+
+Absolute value symbols
+FILE=rlink_generates_05
+  __s.text
+                                  000000d8         0   none ,g         * 
+  __e.text
+                                  000003b5         0   none ,g         * 
+  __s.textf
+                                  000003b5         0   none ,g         * 
+  __e.textf
+                                  0000082f         0   none ,g         * 
+  __s.const
+                                  00002000         0   none ,g         * 
+  __e.const
+                                  00002000         0   none ,g         * 
+  __s.constf
+                                  00000080         0   none ,g         * 
+  __e.constf
+                                  00000080         0   none ,g         * 
+  __s.data
+                                  00000082         0   none ,g         * 
+  __e.data
+                                  00000092         0   none ,g         * 
+  __s.sdata
+                                  00000080         0   none ,g         * 
+  __e.sdata
+                                  00000080         0   none ,g         * 
+  __s.bss
+                                  000fe700         0   none ,g         * 
+  __e.bss
+                                  000ff270         0   none ,g         * 
+  __s.sbss
+                                  000ffe20         0   none ,g         * 
+  __e.sbss
+                                  000ffe20         0   none ,g         * 
+  __s.dataR
+                                  000ff270         0   none ,g         * 
+  __e.dataR
+                                  000ff280         0   none ,g         * 
+  __s.sdataR
+                                  000ffe20         0   none ,g         * 
+  __e.sdataR
+                                  000ffe20         0   none ,g         * 
+  __s.init_array
+                                  00000080         0   none ,g         * 
+  __e.init_array
+                                  00000080         0   none ,g         * 
+  __s.RLIB
+                                  000000c4         0   none ,g         * 
+  __e.RLIB
+                                  000000c4         0   none ,g         * 
+  __s.SLIB
+                                  0000082f         0   none ,g         * 
+  __e.SLIB
+                                  00000855         0   none ,g         * 
+  __s.option_byte
+                                  000000c0         0   none ,g         * 
+  __e.option_byte
+                                  000000c4         0   none ,g         * 
+  __s.monitor1
+                                  000000ce         0   none ,g         * 
+  __e.monitor1
+                                  000000d8         0   none ,g         * 
+  __s.monitor2
+                                  0000fe00         0   none ,g         * 
+  __e.monitor2
+                                  00010000         0   none ,g         * 
+  __s.security_id
+                                  000000c4         0   none ,g         * 
+  __e.security_id
+                                  000000ce         0   none ,g         * 
+  __s.vect
+                                  00000000         0   none ,g         * 
+  __e.vect
+                                  00000080         0   none ,g         * 
+  __RAM_ADDR_START
+                                  000fe700         0   none ,g         * 
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         * 
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         * 
+  __STACK_ADDR_END
+                                  000ff280         0   none ,g         * 
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
